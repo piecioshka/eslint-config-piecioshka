@@ -281,13 +281,30 @@
     "no-plusplus": [0]
   },
   "ecmaFeatures": {
-    "arrowFunctions": true,
+    "arrowFunctions": true
+    "binaryLiterals": true,
     "blockBindings": true,
     "classes": true,
+    "defaultParams": true,
     "destructuring": true,
+    "forOf": true,
+    "generators": true,
     "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": false,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "octalLiterals": false,
     "regexUFlag": true,
-    "regexYFlag": true
+    "regexYFlag": true,
+    "restParams": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+    "unicodeCodePointEscapes": true,
+    "globalReturn": false,
+    "jsx": false,
+    "experimentalObjectRestSpread": true
   },
   "env": {
     "es6": true,
