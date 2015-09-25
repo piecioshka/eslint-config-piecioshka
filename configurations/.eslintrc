@@ -307,8 +307,25 @@
     "experimentalObjectRestSpread": true
   },
   "env": {
-    "es6": true,
     "browser": true,
-    "node": true
+    "node": true,
+    "commonjs": true,
+    "worker": false,
+    "amd": false,
+    "mocha": false,
+    "jasmine": true,
+    "jest": false,
+    "phantomjs": false,
+    "protractor": false,
+    "qunit": false,
+    "jquery": true,
+    "prototypejs": false,
+    "shelljs": false,
+    "meteor": false,
+    "mongo": false,
+    "applescript": false,
+    "serviceworker": false,
+    "embertest": false,
+    "es6": true
   }
 }
