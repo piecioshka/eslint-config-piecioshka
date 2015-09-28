@@ -1,0 +1,42 @@
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+# Indentation for all *.js files
+[*.js]
+indent_style = space
+indent_size = 4
+
+# Indentation for all *.json files
+[*.json]
+indent_style = space
+indent_size = 4
+
+# Indentation for all *.html files
+[*.html]
+indent_style = space
+indent_size = 4
+
+# Indentation for all *.xml files
+[*.xml]
+indent_style = space
+indent_size = 4
+
+# Indentation for all *.css files
+[*.css]
+indent_style = space
+indent_size = 4
+
+# Indentation for all *.scss files
+[*.scss]
+indent_style = space
+indent_size = 4
+
+# Indentation for all *.less files
+[*.less]
+indent_style = space
+indent_size = 4
