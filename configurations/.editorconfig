@@ -1,46 +1,16 @@
+# This file is for unifying the coding style for different editors and IDEs.
 # EditorConfig is awesome: http://EditorConfig.org
 
-# Top-most EditorConfig file
+# No .editorconfig files above the root directory.
 root = true
 
-# Unix-style newlines with a newline ending every file
 [*]
+indent_style = space
 end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-# Indentation for all *.js files
-[*.js]
-indent_style = space
-indent_size = 4
-
-# Indentation for all *.json files
-[*.json]
-indent_style = space
-indent_size = 4
-
-# Indentation for all *.html files
-[*.html]
-indent_style = space
-indent_size = 4
-
-# Indentation for all *.xml files
-[*.xml]
-indent_style = space
-indent_size = 4
-
-# Indentation for all *.css files
-[*.css]
-indent_style = space
-indent_size = 4
-
-# Indentation for all *.scss files
-[*.scss]
-indent_style = space
-indent_size = 4
-
-# Indentation for all *.less files
-[*.less]
-indent_style = space
+# Use 4 spaces for indention in popular file types.
+[*.{js,json,html,xml,css,sass,scss,less}]
 indent_size = 4
