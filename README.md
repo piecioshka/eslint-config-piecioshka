@@ -1,10 +1,8 @@
 # javascript-style-guide
 
-Contain 4 configurations:
+Contain two configurations:
 
- - `.editorconfig` - http://editorconfig.org/
- - `.eslintrc`
+1. `.editorconfig` - http://editorconfig.org/
+2. `.eslintrc`
     - rules: http://eslint.org/docs/rules/
     - version: `ESLint v1.5.1 released 22 September 2015`
- - `.jscsrc` - http://jscs.info/overview.html
- - `.jshintrc` - http://jshint.com/docs/
