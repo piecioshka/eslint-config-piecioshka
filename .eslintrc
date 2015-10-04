@@ -231,8 +231,8 @@
       "builtinGlobals": false,
       "hoist": "functions"
     }],
-    // disallow use of undefined when initializing variables
-    "no-undef-init": [2],
+    // allow use of undefined when initializing variables
+    "no-undef-init": [0],
     // disallow use of undeclared variables unless mentioned in a /*global */ block (recommended)
     "no-undef": [2],
     // disallow use of undefined variable
