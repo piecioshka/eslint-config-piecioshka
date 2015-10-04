@@ -494,7 +494,7 @@
     // limits the number of parameters that can be used in the function declaration.
     "max-params": [2, 10],
     // specify the maximum number of statement allowed in a function
-    "max-statements": [2, 10],
+    "max-statements": [2, 15],
     // disallow use of bitwise operators
     "no-bitwise": [2],
     // disallow use of unary operators, ++ and --
