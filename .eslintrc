@@ -326,8 +326,8 @@
       "beforeBlockComment": true,
       "beforeLineComment": true
     }],
-    // disallow mixed 'LF' and 'CRLF' as linebreaks
-    "linebreak-style": [2, "unix"],
+    // allow mixed 'LF' and 'CRLF' as linebreaks
+    "linebreak-style": [0],
     // specify the maximum depth callbacks can be nested
     "max-nested-callbacks": [2, 5],
     // require a capital letter for constructors
