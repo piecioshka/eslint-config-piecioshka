@@ -1,10 +1,18 @@
 {
-    "name": "javascript-project-settings",
-    "version": "0.0.1",
+    "name": "eslint-config-piecioshka",
+    "version": "0.1.0",
     "description": "Defined .editorconfig, .eslintrc, .gitattributes for JavaScript project",
-    "author": "Piotr Kowalski <piecioshka@gmail.com> (http://piecioshka.pl/)",
+    "license": "MIT",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "piecioshka.pl"
+    },
     "keywords": [
         "javascript",
+        "code",
+        "quality",
+        "checker",
         "style",
         "guide",
         "settings",
@@ -12,12 +20,14 @@
         "project",
         "global",
         "eslint",
-        "editorconfig",
-        "gitattributes"
+        "lint",
+        "eslint",
+        "hint",
+        "jshint",
+        "jhlint"
     ],
     "repository": {
         "type": "git",
-        "url": "http://github.com/piecioshka/javascript-project-settings.git"
-    },
-    "license": "MIT"
+        "url": "http://github.com/piecioshka/eslint-config-piecioshka.git"
+    }
 }

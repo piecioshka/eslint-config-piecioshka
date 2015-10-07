@@ -1,20 +1,39 @@
-# javascript-project-settings
+# eslint-config-piecioshka
 
 > Define coding style for JavaScript project.
 
-## Configurations
+Last update: `ESLint v1.6.0 released 2 October 2015`
 
-1. `.editorconfig`
-    - rules: http://editorconfig.org/
-2. `.eslintrc`
-    - rules: http://eslint.org/docs/rules/
-    - version: `ESLint v1.6.0 released 2 October 2015`
-3. `.gitattributes`
-    - art about *refresh line ending*: https://help.github.com/articles/dealing-with-line-endings/#refreshing-a-repository-after-changing-line-endings
+----
+
+Rules: http://eslint.org/docs/rules/
 
 ## Install
 
-Copy all files to project root.
+```
+$ npm install --save-dev eslint eslint-config-piecioshka
+```
+
+## Usage
+
+Add some ESLint config to your `package.json`:
+
+```json
+{
+    "scripts": {
+        "lint": "eslint ."
+    },
+    "devDependencies": {
+        "eslint": "latest",
+        "eslint-config-piecioshka": "latest"
+    },
+    "eslintConfig": {
+        "extends": "piecioshka"
+    }
+}
+```
+
+Then just lint with `$ npm run lint`.
 
 ## License
 
