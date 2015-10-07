@@ -1,6 +1,6 @@
 # eslint-config-piecioshka
 
-> Define coding style for JavaScript project.
+> ESLint configuration of my style. Defined all rules.
 
 Last update: `ESLint v1.6.0 released 2 October 2015`
 
