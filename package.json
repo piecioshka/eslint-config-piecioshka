@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-piecioshka",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "ESLint configuration of my style. Defined all rules.",
   "license": "MIT",
   "author": {
