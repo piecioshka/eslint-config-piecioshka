@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-piecioshka",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "ESLint configuration of my style. Defined all rules.",
     "license": "MIT",
     "author": {
@@ -9,6 +9,12 @@
         "url": "piecioshka.pl"
     },
     "keywords": [
+        "eslint",
+        "eslintconfig",
+        "hint",
+        "jshint",
+        "jhlint",
+        "lint",
         "javascript",
         "code",
         "quality",
@@ -18,13 +24,7 @@
         "settings",
         "default",
         "project",
-        "global",
-        "eslint",
-        "lint",
-        "eslint",
-        "hint",
-        "jshint",
-        "jhlint"
+        "global"
     ],
     "repository": {
         "type": "git",

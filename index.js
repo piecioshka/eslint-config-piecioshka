@@ -1,4 +1,4 @@
-{
+module.exports = {
     // Tip 1: To use Babel.js as ESLint parser:
     // `npm install babel-eslint`
     // In next step uncomment that line:
@@ -606,4 +606,4 @@
         // enable all ECMAScript 6 features except for modules.
         "es6": false
     }
-}
+};
