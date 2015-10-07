@@ -231,7 +231,7 @@
       "builtinGlobals": false,
       "hoist": "functions"
     }],
-    // allow use of undefined when initializing variables
+    // disallow use of undefined when initializing variables
     "no-undef-init": [0],
     // disallow use of undeclared variables unless mentioned in a /*global */ block (recommended)
     "no-undef": [2],
@@ -326,7 +326,7 @@
       "beforeBlockComment": true,
       "beforeLineComment": true
     }],
-    // allow mixed 'LF' and 'CRLF' as linebreaks
+    // disallow mixed 'LF' and 'CRLF' as linebreaks
     "linebreak-style": [0],
     // specify the maximum depth callbacks can be nested
     "max-nested-callbacks": [2, 5],
