@@ -1,3 +1,23 @@
 {
-  "private": true
+    "name": "javascript-project-settings",
+    "version": "0.0.1",
+    "description": "Defined .editorconfig, .eslintrc, .gitattributes for JavaScript project",
+    "author": "Piotr Kowalski <piecioshka@gmail.com> (http://piecioshka.pl/)",
+    "keywords": [
+        "javascript",
+        "style",
+        "guide",
+        "settings",
+        "default",
+        "project",
+        "global",
+        "eslint",
+        "editorconfig",
+        "gitattributes"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/piecioshka/javascript-project-settings.git"
+    },
+    "license": "MIT"
 }
