@@ -478,7 +478,7 @@ module.exports = {
         // suggest using the spread operator instead of .apply().
         "prefer-spread": [2],
         // suggest using Reflect methods where applicable
-        "prefer-reflect": [2],
+        "prefer-reflect": [0],
         // suggest using template literals instead of strings concatenation
         "prefer-template": [2],
         // disallow generator functions that do not have yield
