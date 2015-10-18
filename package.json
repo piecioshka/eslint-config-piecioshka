@@ -1,36 +1,36 @@
 {
-  "name": "eslint-config-piecioshka",
-  "version": "1.0.7",
-  "description": "ESLint configuration of my style. Defined all rules.",
-  "license": "MIT",
-  "author": {
-    "name": "Piotr Kowalski",
-    "email": "piecioshka@gmail.com",
-    "url": "piecioshka.pl"
-  },
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "hint",
-    "jshint",
-    "jhlint",
-    "lint",
-    "javascript",
-    "code",
-    "quality",
-    "checker",
-    "style",
-    "guide",
-    "settings",
-    "default",
-    "project",
-    "global"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/piecioshka/eslint-config-piecioshka.git"
-  },
-  "peerDependencies": {
-    "eslint": ">=1.6.0"
-  }
+    "name": "eslint-config-piecioshka",
+    "version": "1.0.8",
+    "description": "ESLint configuration of my style. Defined all rules.",
+    "license": "MIT",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "piecioshka.pl"
+    },
+    "keywords": [
+        "eslint",
+        "eslintconfig",
+        "hint",
+        "jshint",
+        "jhlint",
+        "lint",
+        "javascript",
+        "code",
+        "quality",
+        "checker",
+        "style",
+        "guide",
+        "settings",
+        "default",
+        "project",
+        "global"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/piecioshka/eslint-config-piecioshka.git"
+    },
+    "peerDependencies": {
+        "eslint": ">=1.6.0"
+    }
 }

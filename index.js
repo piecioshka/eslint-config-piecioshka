@@ -446,7 +446,7 @@ module.exports = {
         // --------------------------------------------------------
 
         // require parens in arrow function arguments
-        "arrow-parens": [2, "as-needed"],
+        "arrow-parens": [2, "always"],
         // require space before/after arrow function's arrow
         "arrow-spacing": [2, {
             "before": true,
