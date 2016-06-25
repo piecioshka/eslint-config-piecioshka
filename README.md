@@ -4,9 +4,9 @@
 ![](https://img.shields.io/npm/dt/eslint-config-piecioshka.svg)
 ![](https://img.shields.io/npm/l/eslint-config-piecioshka.svg)
 
-> ESLint configuration of my style. Defined all rules.
+> ESLint configuration of my style. All rules was defined.
 
-Last update: `ESLint v1.6.0 released 2 October 2015`
+Last update: `ESLint v2.13.1 released 20 June 2016`
 
 ----
 
@@ -41,4 +41,4 @@ Then just lint with `$ npm run lint`.
 
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org)
+[The MIT License](http://piecioshka.mit-license.org) @ 2015
