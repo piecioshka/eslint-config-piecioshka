@@ -8,12 +8,12 @@ module.exports = {
 
     // Rules: http://eslint.org/docs/rules/
     // ------------------------------------
-    "rules": require('./rules'),
+    "rules": require('./parts/rules'),
 
     // Specifying Language Options: http://eslint.org/docs/user-guide/configuring#specifying-language-options
     // ------------------------------------------------------------------------------------------------------
 
-    "ecmaFeatures": require('./ecmaFeatures'),
+    "ecmaFeatures": require('./parts/ecmaFeatures'),
 
     // Specifying Environments: http://eslint.org/docs/user-guide/configuring#specifying-environments
     // ----------------------------------------------------------------------------------------------
