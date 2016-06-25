@@ -240,7 +240,7 @@ module.exports = {
     // disallow labels that share a name with a variable
     "no-label-var": [2],
     // disallow specified global variables
-    "no-restricted-globals": [], // any name is valid for me
+    "no-restricted-globals": [2], // any name is valid for me
     // disallow `var` declarations from shadowing variables in the outer scope
     "no-shadow": [2, {
         "builtinGlobals": false,
