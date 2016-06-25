@@ -323,7 +323,7 @@ module.exports = {
     // enforce the consistent use of either `function` declarations or expressions
     "func-style": [2, "declaration"],
     // disallow specified identifiers
-    "id-blacklist": [
+    "id-blacklist": [2,
         'e' // I didn't know, that it is error or event.
     ],
     // enforce minimum and maximum identifier lengths
