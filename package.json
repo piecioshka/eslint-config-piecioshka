@@ -6,7 +6,7 @@
     "author": {
         "name": "Piotr Kowalski",
         "email": "piecioshka@gmail.com",
-        "url": "piecioshka.pl"
+        "url": "http://piecioshka.pl"
     },
     "scripts": {
         "test": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json"
