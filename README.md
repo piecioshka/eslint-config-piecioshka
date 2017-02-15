@@ -1,4 +1,4 @@
-# eslint-config-piecioshka
+# eslint-config-piecioshka ([npm](https://www.npmjs.com/package/eslint-config-piecioshka))
 
 ![](https://img.shields.io/npm/v/eslint-config-piecioshka.svg)
 ![](https://img.shields.io/npm/dt/eslint-config-piecioshka.svg)
@@ -9,8 +9,6 @@
 Last update: `ESLint v2.13.1 released 20 June 2016`
 
 ----
-
-Rules: http://eslint.org/docs/rules/
 
 ## Install
 
@@ -38,6 +36,8 @@ Add some ESLint config to your `package.json`:
 ```
 
 Then just lint with `$ npm run lint`.
+
+Rules: http://eslint.org/docs/rules/
 
 ## Unit tests
 
