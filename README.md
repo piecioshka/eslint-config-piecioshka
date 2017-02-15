@@ -39,6 +39,12 @@ Add some ESLint config to your `package.json`:
 
 Then just lint with `$ npm run lint`.
 
+## Unit tests
+
+```
+$ npm test
+```
+
 ## License
 
 [The MIT License](http://piecioshka.mit-license.org) @ 2015
