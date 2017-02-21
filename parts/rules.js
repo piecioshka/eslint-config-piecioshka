@@ -84,11 +84,11 @@ module.exports = {
     // enforce a maximum cyclomatic complexity allowed in a program
     "complexity": [2, 10],
     // require `return` statements to either always or never specify values
-    "consistent-return": [2],
+    "consistent-return": [0],
     // enforce consistent brace style for all control statements
     "curly": [2],
     // require `default` cases in `switch` statements
-    "default-case": [2],
+    "default-case": [1],
     // enforce consistent newlines before and after dots
     "dot-location": [2, "property"],
     // enforce dot notation whenever possible
@@ -147,7 +147,7 @@ module.exports = {
     // disallow `function` declarations and expressions inside loop statements
     "no-loop-func": [2],
     // disallow magic numbers
-    "no-magic-numbers": [2],
+    "no-magic-numbers": [1],
     // disallow multiple spaces
     "no-multi-spaces": [2],
     // disallow multiline strings
@@ -202,7 +202,7 @@ module.exports = {
     // disallow unnecessary escape characters
     "no-useless-escape": [2],
     // disallow `void` operators
-    "no-void": [2],
+    "no-void": [0],
     // disallow specified warning terms in comments
     "no-warning-comments": [1, {
         "terms": ["todo", "fixme", "xxx"],
@@ -232,7 +232,7 @@ module.exports = {
     // --------------------------------------------------
 
     // require or disallow initialization in `var` declarations
-    "init-declarations": [2, "always"],
+    "init-declarations": [1],
     // disallow `catch` clause parameters from shadowing variables in the outer scope
     "no-catch-shadow": [2],
     // disallow deleting variables
@@ -244,7 +244,8 @@ module.exports = {
     // disallow `var` declarations from shadowing variables in the outer scope
     "no-shadow": [2, {
         "builtinGlobals": false,
-        "hoist": "functions"
+        "hoist": "functions",
+        "allow": []
     }],
     // disallow identifiers from shadowing restricted names
     "no-shadow-restricted-names": [2],
@@ -270,7 +271,7 @@ module.exports = {
     // -----------------------------------------------------------------------
 
     // require `return` statements after callbacks
-    "callback-return": [2, ["callback", "cb", "next"]],
+    "callback-return": [0],
     // require `require()` calls to be placed at top-level module scope
     "global-require": [2],
     // require error handling in callbacks
@@ -357,16 +358,22 @@ module.exports = {
     "linebreak-style": [2, "unix"],
     // require empty lines around comments
     "lines-around-comment": [2, {
-        "beforeBlockComment": true,
-        "beforeLineComment": true
+        "beforeBlockComment": true
     }],
     // enforce a maximum depth that blocks can be nested
     "max-depth": [2, 10],
     // enforce a maximum line length
-    "max-len": [2, 120, 4, {
+    "max-len": [2, {
+        "code": 80,
+        "tabWidth": 4,
+        "comments": 80,
+        "ignorePattern": "",
         "ignoreComments": true,
+        "ignoreTrailingComments": true,
         "ignoreUrls": true,
-        "ignorePattern": ""
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
     }],
     // enforce a maximum file length
     "max-lines": [2, {
@@ -395,9 +402,9 @@ module.exports = {
     // require parentheses when invoking a constructor with no arguments
     "new-parens": [2],
     // require or disallow an empty line after `var` declarations
-    "newline-after-var": [2, "always"],
+    "newline-after-var": [0],
     // require an empty line before `return` statements
-    "newline-before-return": [2],
+    "newline-before-return": [0],
     // require a newline after each call in a method chain
     "newline-per-chained-call": [2, {
         "ignoreChainWithDepth": 2
@@ -433,7 +440,7 @@ module.exports = {
     // disallow spacing between `function` identifiers and their applications
     "no-spaced-func": [2],
     // disallow ternary operators
-    "no-ternary": [1],
+    "no-ternary": [0],
     // disallow trailing whitespace at the end of lines
     "no-trailing-spaces": [2, {
         "skipBlankLines": true
@@ -478,7 +485,7 @@ module.exports = {
     // enforce the consistent use of either backticks, double, or single quotes
     "quotes": [2, "single"],
     // require JSDoc comments
-    "require-jsdoc": [2],
+    "require-jsdoc": [1],
     // require or disallow semicolons instead of ASI
     "semi": [2, "always"],
     // enforce consistent spacing before and after semicolons
