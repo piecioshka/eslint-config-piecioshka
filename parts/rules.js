@@ -355,7 +355,7 @@ module.exports = {
         "after": true
     }],
     // enforce consistent linebreak style
-    "linebreak-style": [2, "unix"],
+    "linebreak-style": [0],
     // require empty lines around comments
     "lines-around-comment": [2, {
         "beforeBlockComment": true
