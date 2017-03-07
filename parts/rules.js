@@ -73,7 +73,7 @@ module.exports = {
         },
         "requireReturn": false,
         "requireReturnType": true,
-        "matchDescription": false,
+        "matchDescription": '',
         "requireParamDescription": false,
         "requireReturnDescription": false
     }],
