@@ -63,8 +63,18 @@ module.exports = {
     // enforce valid JSDoc comments
     "valid-jsdoc": [2, {
         "prefer": {},
-        "requireParamDescription": true,
+        "preferType": {
+            "String": "string",
+            "Boolean": "boolean",
+            "Number": "number",
+            "object": "Object",
+            "array": "Array",
+            "function": "Function"
+        },
         "requireReturn": false,
+        "requireReturnType": true,
+        "matchDescription": false,
+        "requireParamDescription": false,
         "requireReturnDescription": false
     }],
     // enforce comparing typeof expressions against valid strings

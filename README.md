@@ -6,7 +6,7 @@
 
 > ESLint configuration of my style. All rules was defined.
 
-Last update: `ESLint v3.16.0 released 20 February 2017`
+Last update: `ESLint v3.17.1 released 6 March 2017`
 
 ----
 
