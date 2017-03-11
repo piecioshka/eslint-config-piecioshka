@@ -504,9 +504,7 @@ module.exports = {
         "after": true
     }],
     // require variables within the same declaration block to be sorted
-    "sort-vars": [2, {
-        "ignoreCase": true
-    }],
+    "sort-vars": [0],
     // enforce consistent spacing before blocks
     "space-before-blocks": [2, "always"],
     // enforce consistent spacing before function definition opening parenthesis
