@@ -1,5 +1,7 @@
 'use strict';
 
+// http://eslint.org/docs/user-guide/configuring#specifying-language-options
+
 module.exports = {
     // enable arrow functions
     "arrowFunctions": true,

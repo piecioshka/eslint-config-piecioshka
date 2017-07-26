@@ -1,12 +1,12 @@
 {
     "name": "eslint-config-piecioshka",
-    "version": "1.1.8",
-    "description": "ESLint (for v3.17.1) configuration of my style. Defined all rules.",
+    "version": "2.0.0",
+    "description": "ESLint (for v4.3.0) configuration of my style. Defined all rules.",
     "license": "MIT",
     "author": {
         "name": "Piotr Kowalski",
         "email": "piecioshka@gmail.com",
-        "url": "http://piecioshka.pl"
+        "url": "https://piecioshka.pl"
     },
     "scripts": {
         "test": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json"
@@ -40,6 +40,6 @@
         "url": "http://github.com/piecioshka/eslint-config-piecioshka.git"
     },
     "devDependencies": {
-        "jasmine": "^2.4.1"
+        "jasmine": "^2.6.0"
     }
 }

@@ -4,11 +4,13 @@
 ![](https://img.shields.io/npm/dt/eslint-config-piecioshka.svg)
 ![](https://img.shields.io/npm/l/eslint-config-piecioshka.svg)
 
-> ESLint configuration of my style. All rules was defined.
+> ESLint (for v4.3.0) configuration of my style. All rules was defined.
 
-Last update: `ESLint v3.17.1 released 6 March 2017`
+---
 
-----
+## Compatibility
+
+Compatible with `ESLint v4.3.0`.
 
 ## Install
 

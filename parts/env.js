@@ -1,5 +1,7 @@
 'use strict';
 
+// http://eslint.org/docs/user-guide/configuring#specifying-environments
+
 module.exports = {
     // browser global variables.
     "browser": false,

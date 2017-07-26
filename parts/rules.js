@@ -1,5 +1,7 @@
 'use strict';
 
+// http://eslint.org/docs/rules/
+
 module.exports = {
     // Possible Errors: http://eslint.org/docs/rules/#possible-errors
     // --------------------------------------------------------------
