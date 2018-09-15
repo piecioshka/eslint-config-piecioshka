@@ -1,12 +1,11 @@
-# eslint-config-piecioshka ([npm](https://www.npmjs.com/package/eslint-config-piecioshka))
+# eslint-config-piecioshka
 
-![](https://img.shields.io/npm/v/eslint-config-piecioshka.svg)
-![](https://img.shields.io/npm/dt/eslint-config-piecioshka.svg)
-![](https://img.shields.io/npm/l/eslint-config-piecioshka.svg)
+[![npm version](https://badge.fury.io/js/eslint-config-piecioshka.svg)](https://badge.fury.io/js/eslint-config-piecioshka)
+[![downloads count](https://img.shields.io/npm/dt/eslint-config-piecioshka.svg)](https://www.npmjs.com/~piecioshka)
+[![travis](https://img.shields.io/travis/piecioshka/eslint-config-piecioshka.svg?maxAge=2592000)](https://travis-ci.org/piecioshka/eslint-config-piecioshka)
+[![dependencies](https://david-dm.org/piecioshka/eslint-config-piecioshka.svg)](https://github.com/piecioshka/eslint-config-piecioshka)
 
-> ESLint (for v4.3.0) configuration of my style. All rules was defined.
-
----
+ESLint (for v4.3.0) configuration of my style. All rules was defined.
 
 ## Compatibility
 
@@ -14,8 +13,8 @@ Compatible with `ESLint v4.3.0`.
 
 ## Install
 
-```
-$ npm install --save-dev eslint eslint-config-piecioshka
+```bash
+npm install --save-dev eslint eslint-config-piecioshka
 ```
 
 ## Usage
@@ -37,14 +36,12 @@ Add some ESLint config to your `package.json`:
 }
 ```
 
-Then just lint with `$ npm run lint`.
-
-Rules: http://eslint.org/docs/rules/
+Then just run `npm run lint`.
 
 ## Unit tests
 
-```
-$ npm test
+```bash
+npm test
 ```
 
 ## License
