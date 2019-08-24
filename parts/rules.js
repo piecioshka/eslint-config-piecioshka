@@ -7,7 +7,7 @@ module.exports = {
     // --------------------------------------------------------------
 
     // require or disallow trailing commas
-    "comma-dangle": ["error", "never"],
+    "comma-dangle": ["off"],
     // disallow assignment operators in conditional expressions
     "no-cond-assign": ["error", "always"],
     // disallow the use of `console`
@@ -273,11 +273,11 @@ module.exports = {
     "no-unused-vars": ["error", {
         "vars": "all",
         "args": "after-used",
-        "varsIgnorePattern": "",
-        "argsIgnorePattern": ""
+        "varsIgnorePattern": "^_",
+        "argsIgnorePattern": "^_"
     }],
     // disallow the use of variables before they are defined
-    "no-use-before-define": ["error"],
+    "no-use-before-define": ["off"],
 
     // Node.js and CommonJS: http://eslint.org/docs/rules/#nodejs-and-commonjs
     // -----------------------------------------------------------------------
@@ -297,7 +297,7 @@ module.exports = {
     // disallow string concatenation with `__dirname` and `__filename`
     "no-path-concat": ["error"],
     // disallow the use of `process.env`
-    "no-process-env": ["error"],
+    "no-process-env": ["off"],
     // disallow the use of `process.exit()`
     "no-process-exit": ["error"],
     // disallow specified modules when loaded by `require`
@@ -432,7 +432,7 @@ module.exports = {
     // disallow `if` statements as the only statement in `else` blocks
     "no-lonely-if": ["error"],
     // disallow mixes of different operators
-    "no-mixed-operators": ["error"],
+    "no-mixed-operators": ["off"],
     // disallow mixed spaces and tabs for indentation
     "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
     // disallow multiple empty lines
@@ -466,19 +466,14 @@ module.exports = {
     // disallow whitespace before properties
     "no-whitespace-before-property": ["error"],
     // enforce consistent line breaks inside braces
-    "object-curly-newline": ["error", {
-        "multiline": true,
-        "minProperties": 2
-    }],
+    "object-curly-newline": ["off"],
     // enforce consistent spacing inside braces
     "object-curly-spacing": ["error", "always", {
         "objectsInObjects": false,
         "arraysInObjects": false
     }],
     // enforce placing object properties on separate lines
-    "object-property-newline": ["error", {
-        "allowMultiplePropertiesPerLine": false
-    }],
+    "object-property-newline": ["off"],
     // enforce variables to be declared either together or separately in functions
     "one-var": ["error", {
         "uninitialized": "always",

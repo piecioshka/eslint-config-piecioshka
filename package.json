@@ -9,7 +9,7 @@
         "url": "https://piecioshka.pl"
     },
     "scripts": {
-        "test": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json"
+        "test": "jasmine test/specs/**.js"
     },
     "keywords": [
         "eslint",

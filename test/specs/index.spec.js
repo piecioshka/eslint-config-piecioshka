@@ -1,6 +1,6 @@
 'use strict';
 
-var config = require('../../../index');
+var config = require('../../index');
 
 describe('is setup?', function () {
     it('should contains 3 parts', function () {
