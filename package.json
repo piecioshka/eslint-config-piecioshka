@@ -40,6 +40,6 @@
         "url": "http://github.com/piecioshka/eslint-config-piecioshka.git"
     },
     "devDependencies": {
-        "jasmine": "^2.6.0"
+        "jasmine": "^3.5.0"
     }
 }

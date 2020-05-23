@@ -593,11 +593,7 @@ module.exports = {
     // enforce spacing between rest and spread operators and their expressions
     "rest-spread-spacing": ["error"],
     // enforce sorted import declarations within modules
-    "sort-imports": ["warn", {
-        "ignoreCase": false,
-        "ignoreMemberSort": false,
-        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"]
-    }],
+    "sort-imports": ["off"],
     // require or disallow spacing around embedded expressions of template strings
     "template-curly-spacing": ["error"],
     // require or disallow spacing around the `*` in `yield*` expressions
