@@ -533,7 +533,7 @@ module.exports = {
     // require braces around arrow function bodies
     "arrow-body-style": ["error", "as-needed"],
     // require parentheses around arrow function arguments
-    "arrow-parens": ["error", "always"],
+    "arrow-parens": ["error", "as-needed"],
     // enforce consistent spacing before and after the arrow in arrow functions
     "arrow-spacing": ["error", {
         "before": true,
