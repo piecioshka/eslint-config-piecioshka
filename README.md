@@ -3,7 +3,6 @@
 [![npm version](https://badge.fury.io/js/eslint-config-piecioshka.svg)](https://badge.fury.io/js/eslint-config-piecioshka)
 [![downloads count](https://img.shields.io/npm/dt/eslint-config-piecioshka.svg)](https://www.npmjs.com/~piecioshka)
 [![travis](https://img.shields.io/travis/piecioshka/eslint-config-piecioshka.svg)](https://travis-ci.org/piecioshka/eslint-config-piecioshka)
-[![dependencies](https://david-dm.org/piecioshka/eslint-config-piecioshka.svg)](https://github.com/piecioshka/eslint-config-piecioshka)
 
 ESLint (for v4.3.0) configuration of my style. All rules was defined.
 
