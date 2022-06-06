@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 module.exports = {
   // Tip:
@@ -6,7 +6,7 @@ module.exports = {
   // In next step uncomment that line:
   // "parser": "babel-eslint",
 
-  parserOptions: require("./parts/parser-options"),
-  rules: require("./parts/rules"),
-  env: require("./parts/env"),
+  parserOptions: require('./parts/parser-options'),
+  rules: require('./parts/rules'),
+  env: require('./parts/env'),
 };

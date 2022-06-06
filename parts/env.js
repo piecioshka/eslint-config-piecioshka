@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 // http://eslint.org/docs/user-guide/configuring#specifying-environments
 
@@ -10,7 +10,7 @@ module.exports = {
   // CommonJS global variables and CommonJS scoping (use this for browser-only code that uses Browserify/WebPack).
   commonjs: false,
   // Globals common to both Node and Browser.
-  "shared-node-browser": false,
+  'shared-node-browser': false,
   // enable all ECMAScript 6 features except for modules.
   es6: false,
   // adds all ECMAScript 2016 globals and automatically sets the ecmaVersion parser option to 7.
