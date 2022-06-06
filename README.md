@@ -2,13 +2,12 @@
 
 [![npm version](https://badge.fury.io/js/eslint-config-piecioshka.svg)](https://badge.fury.io/js/eslint-config-piecioshka)
 [![downloads count](https://img.shields.io/npm/dt/eslint-config-piecioshka.svg)](https://www.npmjs.com/package/eslint-config-piecioshka)
-[![travis-ci](https://api.travis-ci.com/piecioshka/eslint-config-piecioshka.svg?branch=master)](https://app.travis-ci.com/github/piecioshka/eslint-config-piecioshka)
 
-ESLint (for v4.3.0) configuration of my style. All rules was defined.
+ESLint configuration of my style. All rules was defined.
 
 ## Compatibility
 
-Compatible with `ESLint v4.3.0`.
+Compatible with `ESLint v8.17.0`.
 
 ## Install
 
@@ -45,4 +44,4 @@ npm test
 
 ## License
 
-[The MIT License](http://piecioshka.mit-license.org) @ 2015
+[The MIT License](http://piecioshka.mit-license.org) @ 2015-2022

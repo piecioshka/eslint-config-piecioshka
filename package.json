@@ -9,7 +9,8 @@
         "url": "https://piecioshka.pl"
     },
     "scripts": {
-        "test": "jasmine test/specs/**.js"
+        "test": "jasmine test/specs/**.js",
+        "lint": "eslint ."
     },
     "keywords": [
         "eslint",
@@ -40,6 +41,7 @@
         "url": "http://github.com/piecioshka/eslint-config-piecioshka.git"
     },
     "devDependencies": {
+        "eslint": "^8.17.0",
         "jasmine": "^3.5.0"
     }
 }
