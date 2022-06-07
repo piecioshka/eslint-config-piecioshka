@@ -130,7 +130,7 @@ module.exports = {
   // disallow division operators explicitly at the beginning of regular expressions
   'no-div-regex': ['error'],
   // disallow `else` blocks after `return` statements in `if` statements
-  'no-else-return': ['error'],
+  'no-else-return': ['off'],
   // disallow empty functions
   'no-empty-function': ['off'],
   // disallow empty destructuring patterns
