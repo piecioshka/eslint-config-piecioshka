@@ -380,7 +380,7 @@ module.exports = {
   // require or disallow named `function` expressions
   'func-names': ['off'],
   // enforce the consistent use of either `function` declarations or expressions
-  'func-style': ['error', 'declaration'],
+  'func-style': ['off'],
   // disallow specified identifiers
   'id-blacklist': [
     'error',
