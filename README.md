@@ -5,6 +5,22 @@
 
 ESLint configuration of my style. All rules was defined.
 
+## Support `Babel.js`
+
+1. Install:
+
+  ```bash
+  npm install -D @babel/eslint-parser
+  ```
+
+2. Set parser in `.eslintrc.js`:
+
+  ```json
+  {
+    "parser": "@babel/eslint-parser",
+  }
+  ```
+
 ## Compatibility
 
 Compatible with `ESLint v8.17.0`.
