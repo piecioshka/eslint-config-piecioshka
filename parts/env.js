@@ -13,20 +13,6 @@ module.exports = {
   'shared-node-browser': false,
   // enable all ECMAScript 6 features except for modules.
   es6: false,
-  // adds all ECMAScript 2016 globals and automatically sets the ecmaVersion parser option to 7.
-  es2016: false,
-  // adds all ECMAScript 2017 globals and automatically sets the ecmaVersion parser option to 8.
-  es2017: false,
-  // adds all ECMAScript 2018 globals and automatically sets the ecmaVersion parser option to 9.
-  es2018: false,
-  // adds all ECMAScript 2019 globals and automatically sets the ecmaVersion parser option to 10.
-  es2019: false,
-  // adds all ECMAScript 2020 globals and automatically sets the ecmaVersion parser option to 11.
-  es2020: false,
-  // adds all ECMAScript 2021 globals and automatically sets the ecmaVersion parser option to 12.
-  es2021: false,
-  // adds all ECMAScript 2022 globals and automatically sets the ecmaVersion parser option to 13.
-  es2022: false,
   // web workers global variables.
   worker: false,
   // defines `require()` and `define()` as global variables as per the amd spec.
