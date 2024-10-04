@@ -1,7 +1,9 @@
 # eslint-config-piecioshka
 
+[![node version](https://img.shields.io/node/v/eslint-config-piecioshka.svg)](https://www.npmjs.com/package/eslint-config-piecioshka)
 [![npm version](https://badge.fury.io/js/eslint-config-piecioshka.svg)](https://badge.fury.io/js/eslint-config-piecioshka)
 [![downloads count](https://img.shields.io/npm/dt/eslint-config-piecioshka.svg)](https://www.npmjs.com/package/eslint-config-piecioshka)
+[![license](https://img.shields.io/npm/l/eslint-config-piecioshka.svg)](https://www.npmjs.com/package/eslint-config-piecioshka)
 
 ESLint configuration of my style. All rules was defined.
 
@@ -51,12 +53,6 @@ Add some ESLint config to your `package.json`:
 ```
 
 Then just run `npm run lint`.
-
-## Unit tests
-
-```bash
-npm test
-```
 
 ## License
 
