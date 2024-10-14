@@ -3,7 +3,7 @@
 [![node version](https://img.shields.io/node/v/eslint-config-piecioshka.svg)](https://www.npmjs.com/package/eslint-config-piecioshka)
 [![npm version](https://badge.fury.io/js/eslint-config-piecioshka.svg)](https://badge.fury.io/js/eslint-config-piecioshka)
 [![downloads count](https://img.shields.io/npm/dt/eslint-config-piecioshka.svg)](https://www.npmjs.com/package/eslint-config-piecioshka)
-[![license](https://img.shields.io/npm/l/eslint-config-piecioshka.svg)](https://www.npmjs.com/package/eslint-config-piecioshka)
+[![license](https://img.shields.io/npm/l/eslint-config-piecioshka.svg)](https://piecioshka.mit-license.org)
 
 ESLint configuration of my style. All rules was defined.
 
