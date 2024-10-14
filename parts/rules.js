@@ -1,9 +1,9 @@
 'use strict';
 
-// http://eslint.org/docs/rules/
+// https://eslint.org/docs/rules/
 
 module.exports = {
-  // Possible Errors: http://eslint.org/docs/rules/#possible-errors
+  // Possible Errors: https://eslint.org/docs/rules/#possible-errors
   // --------------------------------------------------------------
 
   // require or disallow trailing commas
@@ -85,7 +85,7 @@ module.exports = {
   // enforce comparing typeof expressions against valid strings
   'valid-typeof': ['error'],
 
-  // Best Practices: http://eslint.org/docs/rules/#best-practices
+  // Best Practices: https://eslint.org/docs/rules/#best-practices
   // ------------------------------------------------------------
 
   // enforce getter and setter pairs in objects
@@ -262,13 +262,13 @@ module.exports = {
     },
   ],
 
-  // Strict Mode: http://eslint.org/docs/rules/#strict-mode
+  // Strict Mode: https://eslint.org/docs/rules/#strict-mode
   // ------------------------------------------------------
 
   // require or disallow strict mode directives
   strict: ['off'],
 
-  // Variables: http://eslint.org/docs/rules/#variables
+  // Variables: https://eslint.org/docs/rules/#variables
   // --------------------------------------------------
 
   // require or disallow initialization in `var` declarations
@@ -316,7 +316,7 @@ module.exports = {
   // disallow the use of variables before they are defined
   'no-use-before-define': ['off'],
 
-  // Node.js and CommonJS: http://eslint.org/docs/rules/#nodejs-and-commonjs
+  // Node.js and CommonJS: https://eslint.org/docs/rules/#nodejs-and-commonjs
   // -----------------------------------------------------------------------
 
   // require `return` statements after callbacks
@@ -345,7 +345,7 @@ module.exports = {
   // disallow synchronous methods
   'no-sync': ['error'],
 
-  // Stylistic Issues: http://eslint.org/docs/rules/#stylistic-issues
+  // Stylistic Issues: https://eslint.org/docs/rules/#stylistic-issues
   // ----------------------------------------------------------------
 
   // enforce consistent spacing inside array brackets
@@ -625,7 +625,7 @@ module.exports = {
   // require parenthesis around regex literals
   'wrap-regex': ['error'],
 
-  // ECMAScript 6: http://eslint.org/docs/rules/#ecmascript-6
+  // ECMAScript 6: https://eslint.org/docs/rules/#ecmascript-6
   // --------------------------------------------------------
 
   // require braces around arrow function bodies
