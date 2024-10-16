@@ -1,7 +1,7 @@
 {
     "name": "eslint-config-piecioshka",
     "version": "2.3.2",
-    "description": "ESLint (for v4.3.0) configuration of my style. Defined all rules.",
+    "description": "🔨 ESLint (for v4.3.0) configuration of my style. Defined all rules.",
     "license": "MIT",
     "author": {
         "name": "Piotr Kowalski",

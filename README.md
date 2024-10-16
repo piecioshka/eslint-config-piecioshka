@@ -6,7 +6,7 @@
 [![license](https://img.shields.io/npm/l/eslint-config-piecioshka.svg)](https://piecioshka.mit-license.org)
 [![github-ci](https://github.com/piecioshka/eslint-config-piecioshka/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/eslint-config-piecioshka/actions/workflows/testing.yml)
 
-ESLint configuration of my style. All rules was defined.
+🔨 ESLint configuration of my style. All rules was defined.
 
 ## Support `Babel.js`
 
@@ -31,7 +31,7 @@ Compatible with `ESLint v8.17.0`.
 ## Install
 
 ```bash
-npm install --save-dev eslint eslint-config-piecioshka
+npm install -D eslint eslint-config-piecioshka
 ```
 
 ## Usage
