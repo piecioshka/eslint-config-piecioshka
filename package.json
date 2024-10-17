@@ -12,6 +12,20 @@
         "test": "jasmine test/specs/**.js",
         "lint": "eslint ."
     },
+    "devDependencies": {
+        "eslint": "^8.17.0",
+        "jasmine": "^3.5.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/piecioshka/eslint-config-piecioshka.git"
+    },
+    "files": [
+        "parts",
+        "index.js",
+        "package.json",
+        "README.md"
+    ],
     "keywords": [
         "eslint",
         "eslintconfig",
@@ -30,18 +44,5 @@
         "project",
         "global"
     ],
-    "files": [
-        "parts",
-        "index.js",
-        "package.json",
-        "README.md"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/piecioshka/eslint-config-piecioshka.git"
-    },
-    "devDependencies": {
-        "eslint": "^8.17.0",
-        "jasmine": "^3.5.0"
-    }
+    "main": "./index.js"
 }
