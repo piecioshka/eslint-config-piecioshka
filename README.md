@@ -58,4 +58,4 @@ Then just run `npm run lint`.
 
 ## License
 
-[The MIT License](https://piecioshka.mit-license.org) @ 2015-2024
+[The MIT License](https://piecioshka.mit-license.org) @ 2015
