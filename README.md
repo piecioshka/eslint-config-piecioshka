@@ -29,13 +29,13 @@
 
 Compatible with `ESLint v8.17.0`.
 
-## Install
+## Usage
+
+Installation:
 
 ```bash
 npm install -D eslint eslint-config-piecioshka
 ```
-
-## Usage
 
 Add some ESLint config to your `package.json`:
 
