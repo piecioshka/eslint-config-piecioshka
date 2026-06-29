@@ -3,6 +3,9 @@
   "description": "🔨 ESLint configuration of my style. Defined all rules.",
   "version": "2.3.7",
   "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
   "author": {
     "name": "Piotr Kowalski",
     "email": "piecioshka@gmail.com",
