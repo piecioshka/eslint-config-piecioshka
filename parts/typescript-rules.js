@@ -38,4 +38,11 @@ module.exports = {
   // enforce using the record type instead of index signatures
   // https://typescript-eslint.io/rules/consistent-indexed-object-style/
   '@typescript-eslint/consistent-indexed-object-style': ['error', 'record'],
+
+  // disallow type assertions (e.g. `x as T` and `<T>x`)
+  // https://typescript-eslint.io/rules/consistent-type-assertions/
+  '@typescript-eslint/consistent-type-assertions': [
+    'error',
+    { assertionStyle: 'never' },
+  ],
 };

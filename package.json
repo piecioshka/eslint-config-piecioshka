@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-piecioshka",
-  "description": "🔨 ESLint (for v4.3.0) configuration of my style. Defined all rules.",
+  "description": "🔨 ESLint configuration of my style. Defined all rules.",
   "version": "2.3.7",
   "license": "MIT",
   "author": {
@@ -12,10 +12,22 @@
     "test": "jasmine test/specs/**.js",
     "lint": "eslint ."
   },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.62.0",
+    "@typescript-eslint/parser": "^8.62.0"
+  },
   "devDependencies": {
     "eslint": "^8.57.1",
     "jasmine": "^3.5.0",
     "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.8.4"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
   },
   "repository": {
     "type": "git",
@@ -47,17 +59,5 @@
     "project",
     "global"
   ],
-  "main": "./index.js",
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.62.0",
-    "@typescript-eslint/parser": "^8.62.0"
-  },
-  "peerDependencies": {
-    "typescript": ">=4.8.4"
-  },
-  "peerDependenciesMeta": {
-    "typescript": {
-      "optional": true
-    }
-  }
+  "main": "./index.js"
 }
