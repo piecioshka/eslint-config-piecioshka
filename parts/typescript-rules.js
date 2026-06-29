@@ -39,10 +39,15 @@ module.exports = {
   // https://typescript-eslint.io/rules/consistent-indexed-object-style/
   '@typescript-eslint/consistent-indexed-object-style': ['error', 'record'],
 
-  // disallow type assertions (e.g. `x as T` and `<T>x`)
+  // disallow type assertions on object/array literals, but allow `as const`
+  // and `x as T` elsewhere (the `never` style would also forbid `as const`).
   // https://typescript-eslint.io/rules/consistent-type-assertions/
   '@typescript-eslint/consistent-type-assertions': [
     'error',
-    { assertionStyle: 'never' },
+    {
+      assertionStyle: 'as',
+      objectLiteralTypeAssertions: 'never',
+      arrayLiteralTypeAssertions: 'never',
+    },
   ],
 };
