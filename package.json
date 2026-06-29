@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-piecioshka",
   "description": "🔨 ESLint configuration of my style. Defined all rules.",
-  "version": "2.3.7",
+  "version": "3.0.0",
   "license": "MIT",
   "engines": {
     "node": ">=20"
