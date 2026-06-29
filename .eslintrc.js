@@ -18,8 +18,6 @@ module.exports = {
   // https://eslint.org/docs/rules/
   rules: {
     ...require('./parts/rules'),
-    indent: ['error', 2],
-    'global-require': 'off',
     'no-magic-numbers': 'off',
   },
 

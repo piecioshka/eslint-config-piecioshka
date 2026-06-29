@@ -1,13 +1,25 @@
 'use strict';
 
 // https://eslint.org/docs/rules/
+//
+// Only non-deprecated core rules are kept here (ESLint v8).
+//
+// Removed on purpose:
+// - stylistic rules (indent, quotes, semi, spacing, ...) — handled by Prettier
+// - Node.js/CommonJS rules — moved out of core to `eslint-plugin-n`
+// - JSDoc rules (valid-jsdoc, require-jsdoc) — moved out of core to
+//   `eslint-plugin-jsdoc`
+//
+// Renamed to their successors:
+// - no-negated-in-lhs  -> no-unsafe-negation
+// - no-native-reassign -> no-global-assign
+// - id-blacklist       -> id-denylist
+// - no-new-object      -> no-object-constructor
 
 module.exports = {
   // Possible Errors: https://eslint.org/docs/rules/#possible-errors
   // --------------------------------------------------------------
 
-  // require or disallow trailing commas
-  'comma-dangle': ['off'],
   // disallow assignment operators in conditional expressions
   'no-cond-assign': ['error', 'always'],
   // disallow the use of `console`
@@ -32,10 +44,6 @@ module.exports = {
   'no-ex-assign': ['error'],
   // disallow unnecessary boolean casts
   'no-extra-boolean-cast': ['error'],
-  // disallow unnecessary parentheses
-  'no-extra-parens': ['error', 'functions'],
-  // disallow unnecessary semicolons
-  'no-extra-semi': ['error'],
   // disallow reassigning `function` declarations
   'no-func-assign': ['error'],
   // disallow `function` or `var` declarations in nested blocks
@@ -44,8 +52,8 @@ module.exports = {
   'no-invalid-regexp': ['error'],
   // disallow irregular whitespace outside of strings and comments
   'no-irregular-whitespace': ['error'],
-  // disallow negating the left operand in `in` expressions
-  'no-negated-in-lhs': ['error'],
+  // disallow negating the left operand of relational operators
+  'no-unsafe-negation': ['error'],
   // disallow calling global object properties as functions
   'no-obj-calls': ['error'],
   // Disallow use of `Object.prototypes` builtins directly
@@ -62,26 +70,6 @@ module.exports = {
   'no-unsafe-finally': ['error'],
   // require calls to `isNaN()` when checking for `NaN`
   'use-isnan': ['error'],
-  // enforce valid JSDoc comments
-  'valid-jsdoc': [
-    'error',
-    {
-      prefer: {},
-      preferType: {
-        String: 'string',
-        Boolean: 'boolean',
-        Number: 'number',
-        object: 'Object',
-        array: 'Array',
-        function: 'Function',
-      },
-      requireReturn: false,
-      requireReturnType: true,
-      matchDescription: '',
-      requireParamDescription: false,
-      requireReturnDescription: false,
-    },
-  ],
   // enforce comparing typeof expressions against valid strings
   'valid-typeof': ['error'],
 
@@ -107,8 +95,6 @@ module.exports = {
   curly: ['error'],
   // require `default` cases in `switch` statements
   'default-case': ['warn'],
-  // enforce consistent newlines before and after dots
-  'dot-location': ['error', 'property'],
   // enforce dot notation whenever possible
   'dot-notation': [
     'error',
@@ -152,8 +138,6 @@ module.exports = {
   'no-extra-label': ['error'],
   // disallow fallthrough of `case` statements
   'no-fallthrough': ['error'],
-  // disallow leading or trailing decimal points in numeric literals
-  'no-floating-decimal': ['error'],
   // disallow shorthand type conversions
   'no-implicit-coercion': ['error'],
   // disallow `var` and named `function` declarations in the global scope
@@ -172,12 +156,8 @@ module.exports = {
   'no-loop-func': ['error'],
   // disallow magic numbers
   'no-magic-numbers': ['warn'],
-  // disallow multiple spaces
-  'no-multi-spaces': ['error'],
   // disallow multiline strings
   'no-multi-str': ['error'],
-  // disallow reassigning native objects
-  'no-native-reassign': ['error'],
   // disallow `new` operators outside of assignments or comparisons
   'no-new': ['warn'],
   // disallow `new` operators with the `Function` object
@@ -250,8 +230,6 @@ module.exports = {
   radix: ['error'],
   // require `var` declarations be placed at the top of their containing scope
   'vars-on-top': ['warn'],
-  // require parentheses around immediate `function` invocations
-  'wrap-iife': ['error', 'outside'],
   // require or disallow "Yoda" conditions
   yoda: [
     'error',
@@ -273,8 +251,8 @@ module.exports = {
 
   // require or disallow initialization in `var` declarations
   'init-declarations': ['off'],
-  // disallow `catch` clause parameters from shadowing variables in the outer scope
-  'no-catch-shadow': ['error'],
+  // disallow reassigning read-only global variables
+  'no-global-assign': ['error'],
   // disallow deleting variables
   'no-delete-var': ['error'],
   // disallow labels that share a name with a variable
@@ -316,44 +294,9 @@ module.exports = {
   // disallow the use of variables before they are defined
   'no-use-before-define': ['off'],
 
-  // Node.js and CommonJS: https://eslint.org/docs/rules/#nodejs-and-commonjs
-  // -----------------------------------------------------------------------
+  // Stylistic Issues: handled by Prettier, only non-formatting rules kept
+  // --------------------------------------------------------------------
 
-  // require `return` statements after callbacks
-  'callback-return': ['off'],
-  // require `require()` calls to be placed at top-level module scope
-  'global-require': ['warn'],
-  // require error handling in callbacks
-  'handle-callback-err': ['error', '^(err|error)$'],
-  // disallow `require` calls to be mixed with regular `var` declarations
-  'no-mixed-requires': [
-    'error',
-    {
-      grouping: true,
-    },
-  ],
-  // disallow `new` operators with calls to `require`
-  'no-new-require': ['error'],
-  // disallow string concatenation with `__dirname` and `__filename`
-  'no-path-concat': ['error'],
-  // disallow the use of `process.env`
-  'no-process-env': ['off'],
-  // disallow the use of `process.exit()`
-  'no-process-exit': ['error'],
-  // disallow specified modules when loaded by `require`
-  'no-restricted-modules': ['error', ''],
-  // disallow synchronous methods
-  'no-sync': ['error'],
-
-  // Stylistic Issues: https://eslint.org/docs/rules/#stylistic-issues
-  // ----------------------------------------------------------------
-
-  // enforce consistent spacing inside array brackets
-  'array-bracket-spacing': ['error', 'never'],
-  // enforce consistent spacing inside single-line blocks
-  'block-spacing': ['error', 'always'],
-  // enforce consistent brace style for blocks
-  'brace-style': ['error'],
   // enforce camelcase naming convention
   camelcase: [
     'error',
@@ -361,28 +304,14 @@ module.exports = {
       properties: 'always',
     },
   ],
-  // enforce consistent spacing before and after commas
-  'comma-spacing': [
-    'error',
-    {
-      before: false,
-      after: true,
-    },
-  ],
-  // enforce consistent comma style
-  'comma-style': ['error', 'last'],
-  // enforce consistent spacing inside computed property brackets
-  'computed-property-spacing': ['error', 'never'],
   // enforce consistent naming when capturing the current execution context
   'consistent-this': ['error', 'self'],
-  // enforce at least one newline at the end of files
-  'eol-last': ['error'],
   // require or disallow named `function` expressions
   'func-names': ['off'],
   // enforce the consistent use of either `function` declarations or expressions
   'func-style': ['off'],
   // disallow specified identifiers
-  'id-blacklist': [
+  'id-denylist': [
     'error',
     // I didn't know, that it is error or event.
     'e',
@@ -405,59 +334,8 @@ module.exports = {
       properties: false,
     },
   ],
-  // enforce consistent indentation
-  indent: [
-    'error',
-    4,
-    {
-      SwitchCase: 1,
-    },
-  ],
-  // enforce the consistent use of either double or single quotes in JSX attributes
-  'jsx-quotes': ['error', 'prefer-double'],
-  // enforce consistent spacing between keys and values in object literal properties
-  'key-spacing': [
-    'error',
-    {
-      beforeColon: false,
-      afterColon: true,
-    },
-  ],
-  // enforce consistent spacing before and after keywords
-  'keyword-spacing': [
-    'error',
-    {
-      before: true,
-      after: true,
-    },
-  ],
-  // enforce consistent linebreak style
-  'linebreak-style': ['off'],
-  // require empty lines around comments
-  'lines-around-comment': [
-    'error',
-    {
-      beforeBlockComment: true,
-    },
-  ],
   // enforce a maximum depth that blocks can be nested
   'max-depth': ['error', 10],
-  // enforce a maximum line length
-  'max-len': [
-    'error',
-    {
-      code: 80,
-      tabWidth: 4,
-      comments: 80,
-      ignorePattern: '',
-      ignoreComments: true,
-      ignoreTrailingComments: true,
-      ignoreUrls: true,
-      ignoreStrings: true,
-      ignoreTemplateLiterals: true,
-      ignoreRegExpLiterals: true,
-    },
-  ],
   // enforce a maximum file length
   'max-lines': [
     'error',
@@ -473,13 +351,6 @@ module.exports = {
   'max-params': ['error', 10],
   // enforce a maximum number of statements allowed in `function` blocks
   'max-statements': ['error', 15],
-  // enforce a maximum number of statements allowed per line
-  'max-statements-per-line': [
-    'error',
-    {
-      max: 1,
-    },
-  ],
   // require constructor `function` names to begin with a capital letter
   'new-cap': [
     'error',
@@ -489,19 +360,6 @@ module.exports = {
       newIsCapExceptions: [],
       capIsNewExceptions: [],
       properties: true,
-    },
-  ],
-  // require parentheses when invoking a constructor with no arguments
-  'new-parens': ['error'],
-  // require or disallow an empty line after `var` declarations
-  'newline-after-var': ['off'],
-  // require an empty line before `return` statements
-  'newline-before-return': ['off'],
-  // require a newline after each call in a method chain
-  'newline-per-chained-call': [
-    'error',
-    {
-      ignoreChainWithDepth: 2,
     },
   ],
   // disallow `Array` constructors
@@ -514,38 +372,18 @@ module.exports = {
   'no-inline-comments': ['off'],
   // disallow `if` statements as the only statement in `else` blocks
   'no-lonely-if': ['error'],
-  // disallow mixes of different operators
-  'no-mixed-operators': ['off'],
-  // disallow mixed spaces and tabs for indentation
-  'no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
-  // disallow multiple empty lines
-  'no-multiple-empty-lines': [
-    'error',
-    {
-      max: 2,
-    },
-  ],
   // disallow negated conditions
   'no-negated-condition': ['error'],
   // disallow nested ternary expressions
   'no-nested-ternary': ['error'],
   // disallow `Object` constructors
-  'no-new-object': ['error'],
+  'no-object-constructor': ['error'],
   // disallow the unary operators `++` and `--`
   'no-plusplus': ['off'],
   // disallow specified syntax
   'no-restricted-syntax': ['error', 'WithStatement'],
-  // disallow spacing between `function` identifiers and their applications
-  'no-spaced-func': ['error'],
   // disallow ternary operators
   'no-ternary': ['off'],
-  // disallow trailing whitespace at the end of lines
-  'no-trailing-spaces': [
-    'error',
-    {
-      skipBlankLines: true,
-    },
-  ],
   // disallow dangling underscores in identifiers
   'no-underscore-dangle': ['off'],
   // disallow ternary operators when simpler alternatives exist
@@ -555,110 +393,24 @@ module.exports = {
       defaultAssignment: true,
     },
   ],
-  // disallow whitespace before properties
-  'no-whitespace-before-property': ['error'],
-  // enforce consistent line breaks inside braces
-  'object-curly-newline': ['off'],
-  // enforce consistent spacing inside braces
-  'object-curly-spacing': ['error', 'always'],
-  // enforce placing object properties on separate lines
-  'object-property-newline': ['off'],
   // enforce variables to be declared either together or separately in functions
   'one-var': ['off'],
-  // require or disallow newlines around `var` declarations
-  'one-var-declaration-per-line': ['error', 'initializations'],
   // require or disallow assignment operator shorthand where possible
   'operator-assignment': ['error', 'always'],
-  // enforce consistent linebreak style for operators
-  'operator-linebreak': ['error', 'before'],
-  // require or disallow padding within blocks
-  'padded-blocks': ['off'],
-  // require quotes around object literal property names
-  'quote-props': ['error', 'as-needed'],
-  // enforce the consistent use of either backticks, double, or single quotes
-  quotes: ['error', 'single', { allowTemplateLiterals: true }],
-  // require JSDoc comments
-  'require-jsdoc': ['off'],
-  // require or disallow semicolons instead of ASI
-  semi: ['error', 'always'],
-  // enforce consistent spacing before and after semicolons
-  'semi-spacing': [
-    'error',
-    {
-      before: false,
-      after: true,
-    },
-  ],
   // require variables within the same declaration block to be sorted
   'sort-vars': ['off'],
-  // enforce consistent spacing before blocks
-  'space-before-blocks': ['error', 'always'],
-  // enforce consistent spacing before function definition opening parenthesis
-  'space-before-function-paren': [
-    'error',
-    {
-      anonymous: 'always',
-      named: 'never',
-    },
-  ],
-  // enforce consistent spacing inside parentheses
-  'space-in-parens': ['error', 'never'],
-  // require spacing around operators
-  'space-infix-ops': [
-    'error',
-    {
-      int32Hint: false,
-    },
-  ],
-  // enforce consistent spacing before or after unary operators
-  'space-unary-ops': [
-    'warn',
-    {
-      words: true,
-      nonwords: false,
-    },
-  ],
-  // enforce consistent spacing after the `//` or `/*` in a comment
-  'spaced-comment': ['error', 'always', { block: { exceptions: ['*'] } }],
   // require or disallow the Unicode BOM
   'unicode-bom': ['error', 'never'],
-  // require parenthesis around regex literals
-  'wrap-regex': ['error'],
 
   // ECMAScript 6: https://eslint.org/docs/rules/#ecmascript-6
   // --------------------------------------------------------
 
   // require braces around arrow function bodies
   'arrow-body-style': ['off'],
-  // require parentheses around arrow function arguments
-  'arrow-parens': ['error', 'always'],
-  // enforce consistent spacing before and after the arrow in arrow functions
-  'arrow-spacing': [
-    'error',
-    {
-      before: true,
-      after: true,
-    },
-  ],
   // require `super()` calls in constructors
   'constructor-super': ['error'],
-  // enforce consistent spacing around `*` operators in generator functions
-  'generator-star-spacing': [
-    'error',
-    {
-      before: true,
-      after: true,
-    },
-  ],
   // disallow reassigning class members
   'no-class-assign': ['error'],
-  // disallow arrow functions where they could be confused with comparisons
-  'no-confusing-arrow': [
-    'error',
-    {
-      allowParens: false,
-    },
-  ],
   // disallow reassigning `const` variables
   'no-const-assign': ['error'],
   // disallow duplicate class members
@@ -690,8 +442,6 @@ module.exports = {
   'prefer-arrow-callback': ['error'],
   // require `const` declarations for variables that are never reassigned after declared
   'prefer-const': ['off'],
-  // require `Reflect` methods where applicable
-  'prefer-reflect': ['off'],
   // require rest parameters instead of `arguments`
   'prefer-rest-params': ['off'],
   // require spread operators instead of `.apply()`
@@ -700,18 +450,6 @@ module.exports = {
   'prefer-template': ['error'],
   // require generator functions to contain `yield`
   'require-yield': ['error'],
-  // enforce spacing between rest and spread operators and their expressions
-  'rest-spread-spacing': ['error'],
   // enforce sorted import declarations within modules
   'sort-imports': ['off'],
-  // require or disallow spacing around embedded expressions of template strings
-  'template-curly-spacing': ['error'],
-  // require or disallow spacing around the `*` in `yield*` expressions
-  'yield-star-spacing': [
-    'error',
-    {
-      before: true,
-      after: true,
-    },
-  ],
 };
