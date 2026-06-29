@@ -45,7 +45,7 @@ The parser and plugin (`@typescript-eslint/*`) ship as dependencies of this conf
 
 ## Compatibility
 
-Compatible with `ESLint v8.17.0`.
+Requires `ESLint v8` (legacy `.eslintrc` format). ESLint v9+ flat config is not supported yet.
 
 ## Usage
 
@@ -63,7 +63,7 @@ Add some ESLint config to your `package.json`:
     "lint": "eslint ."
   },
   "devDependencies": {
-    "eslint": "latest",
+    "eslint": "^8",
     "eslint-config-piecioshka": "latest"
   },
   "eslintConfig": {
