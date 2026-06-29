@@ -61,9 +61,9 @@ describe('TypeScript rules', () => {
   });
 
   it('should set every rule to the `error` severity', () => {
-    const severities = Object.values(rules).map((value) =>
-      Array.isArray(value) ? value[0] : value,
-    );
+    const severities = Object.values(rules).map((value) => {
+      return Array.isArray(value) ? value[0] : value;
+    });
     const allowed = ['error', 'off'];
     severities.forEach((severity) => {
       expect(allowed).toContain(severity);
