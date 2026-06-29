@@ -2,7 +2,7 @@ module.exports = {
   parserOptions: {
     ...require('./parts/parser-options'),
 
-    // Support syntax ES2018
+    // Support ES2022 syntax
     ecmaVersion: 2022,
 
     // Support syntax ES2015 Import/Export
