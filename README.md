@@ -1,5 +1,7 @@
 # eslint-config-piecioshka
 
+<!-- prettier-ignore-start -->
+
 [![node version](https://img.shields.io/node/v/eslint-config-piecioshka.svg)](https://www.npmjs.com/package/eslint-config-piecioshka)
 [![npm version](https://badge.fury.io/js/eslint-config-piecioshka.svg)](https://badge.fury.io/js/eslint-config-piecioshka)
 [![downloads count](https://img.shields.io/npm/dt/eslint-config-piecioshka.svg)](https://www.npmjs.com/package/eslint-config-piecioshka)
@@ -7,27 +9,47 @@
 [![license](https://img.shields.io/npm/l/eslint-config-piecioshka.svg)](https://piecioshka.mit-license.org)
 [![github-ci](https://github.com/piecioshka/eslint-config-piecioshka/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/eslint-config-piecioshka/actions/workflows/testing.yml)
 
+<!-- prettier-ignore-end -->
+
 🔨 ESLint configuration of my style. All rules was defined.
 
 ## Support `Babel.js`
 
 1. Install:
 
-  ```bash
-  npm install -D @babel/eslint-parser
-  ```
+```bash
+npm install -D @babel/eslint-parser
+```
 
 2. Set parser in `.eslintrc.js`:
 
-  ```json
-  {
-    "parser": "@babel/eslint-parser",
-  }
-  ```
+```json
+{
+  "parser": "@babel/eslint-parser"
+}
+```
+
+## Support `TypeScript`
+
+1. Install:
+
+```bash
+npm install -D typescript eslint-config-piecioshka
+```
+
+The parser and plugin (`@typescript-eslint/*`) ship as dependencies of this config, so there is nothing else to install.
+
+2. Extend both configs in `.eslintrc.js` (base first, TypeScript second):
+
+```json
+{
+  "extends": ["piecioshka", "piecioshka/typescript"]
+}
+```
 
 ## Compatibility
 
-Compatible with `ESLint v8.17.0`.
+Requires `ESLint v8` (legacy `.eslintrc` format). ESLint v9+ flat config is not supported yet.
 
 ## Usage
 
@@ -41,16 +63,16 @@ Add some ESLint config to your `package.json`:
 
 ```json
 {
-    "scripts": {
-        "lint": "eslint ."
-    },
-    "devDependencies": {
-        "eslint": "latest",
-        "eslint-config-piecioshka": "latest"
-    },
-    "eslintConfig": {
-        "extends": "piecioshka"
-    }
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-piecioshka": "latest"
+  },
+  "eslintConfig": {
+    "extends": "piecioshka"
+  }
 }
 ```
 

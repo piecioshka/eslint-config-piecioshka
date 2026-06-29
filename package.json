@@ -1,49 +1,67 @@
 {
-    "name": "eslint-config-piecioshka",
-    "description": "🔨 ESLint (for v4.3.0) configuration of my style. Defined all rules.",
-    "version": "2.3.7",
-    "license": "MIT",
-    "author": {
-        "name": "Piotr Kowalski",
-        "email": "piecioshka@gmail.com",
-        "url": "https://piecioshka.pl"
-    },
-    "scripts": {
-        "test": "jasmine test/specs/**.js",
-        "lint": "eslint ."
-    },
-    "devDependencies": {
-        "eslint": "^8.17.0",
-        "jasmine": "^3.5.0"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+ssh://git@github.com/piecioshka/eslint-config-piecioshka.git"
-    },
-    "files": [
-        "parts",
-        "index.js",
-        "package.json",
-        "README.md",
-        "LICENSE"
-    ],
-    "keywords": [
-        "eslint",
-        "eslintconfig",
-        "hint",
-        "jshint",
-        "jhlint",
-        "lint",
-        "javascript",
-        "code",
-        "quality",
-        "checker",
-        "style",
-        "guide",
-        "settings",
-        "default",
-        "project",
-        "global"
-    ],
-    "main": "./index.js"
+  "name": "eslint-config-piecioshka",
+  "description": "🔨 ESLint configuration of my style. Defined all rules.",
+  "version": "2.3.7",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "author": {
+    "name": "Piotr Kowalski",
+    "email": "piecioshka@gmail.com",
+    "url": "https://piecioshka.pl"
+  },
+  "scripts": {
+    "test": "jasmine test/specs/**.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.62.0",
+    "@typescript-eslint/parser": "^8.62.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "jasmine": "^6.3.0",
+    "prettier": "^3.9.1",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0",
+    "typescript": ">=4.8.4"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/piecioshka/eslint-config-piecioshka.git"
+  },
+  "files": [
+    "parts",
+    "index.js",
+    "typescript.js",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "lint",
+    "javascript",
+    "code",
+    "quality",
+    "checker",
+    "style",
+    "guide",
+    "settings",
+    "default",
+    "project",
+    "global"
+  ],
+  "main": "./index.js"
 }
